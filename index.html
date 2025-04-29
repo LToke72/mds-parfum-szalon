@@ -7,7 +7,9 @@
     <style>
         body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: #FAF9F6; color: #333; }
         header { background-color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        header img { height: 60px; }
+        .logo-container { display: flex; align-items: center; }
+        .logo-container img { height: 60px; margin-right: 15px; }
+        .logo-text { font-size: 1.5em; font-weight: bold; color: #D4AF37; }
         nav a { margin: 0 15px; text-decoration: none; color: #D4AF37; font-weight: bold; }
         nav a:hover { text-decoration: underline; }
         section { padding: 40px 20px; max-width: 1200px; margin: auto; }
@@ -26,23 +28,29 @@
         @media (max-width: 768px) {
             .product { width: 100%; margin-bottom: 20px; }
             nav a { display: block; margin: 10px 0; }
+            .logo-text { font-size: 1.2em; }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="M_logo.png" alt="MDS Logo">
+        <div class="logo-container">
+            <img src="M_logo.png" alt="MDS Logo">
+            <div class="logo-text">MDS Parfüm Szalon</div>
+        </div>
         <nav>
-            <a href="#home">Főoldal</a>
-            <a href="#services">Szolgáltatások</a>
-            <a href="#products">Parfümök</a>
-            <a href="#contact">Kapcsolat</a>
+            <a href="index.html#home">Főoldal</a>
+            <a href="index.html#services">Szolgáltatások</a>
+            <a href="index.html#products">Parfümök</a>
+            <a href="rolunk.html">Rólunk</a>
+            <a href="index.html#contact">Kapcsolat</a>
         </nav>
     </header>
 
     <section id="home">
         <h1>Üdvözlünk az MDS Parfüm Szalonban</h1>
         <p>Az illatok művészete. Egyedi parfümök, személyre szabott tanácsadás, exkluzív élmények.</p>
+        <img src="https://via.placeholder.com/1200x400?text=Minta+Parfüm" alt="Bemutató kép" style="width:100%; max-height:400px; object-fit:cover; margin-top:20px; border-radius:10px;">
     </section>
 
     <section id="services" class="services">

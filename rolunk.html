@@ -2,19 +2,61 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rólunk - MDS Parfüm Szalon</title>
     <style>
-        body { font-family: sans-serif; background: #FAF9F6; padding: 40px; color: #333; max-width: 800px; margin: auto; }
-        h1 { color: #D4AF37; }
-        a { color: #D4AF37; text-decoration: none; }
+        
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff8ef; }
+        header { background: #d4af37; padding: 10px 20px; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        main { padding-top: 100px; }
+        .logo-container { display: flex; align-items: center; }
+        .logo-container img { height: 80px; }
+        .logo-text { font-size: 1.8em; font-weight: bold; color: #000; margin-left: 10px; }
+        nav a { margin: 0 15px; text-decoration: none; color: black; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .hero { background: url('https://images.unsplash.com/photo-1600185366004-602fa827fc1d?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover; color: white; padding: 100px 20px; text-align: center; }
+        .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 20px; }
+        .product { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 20px; width: 250px; overflow: hidden; }
+        .product img { width: 100%; height: 200px; object-fit: cover; }
+        .product h3 { margin: 10px; }
+        .product p { margin: 10px; font-size: 0.9em; }
+        footer { background: #222; color: white; text-align: center; padding: 20px; }
+        form { display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; }
+        input, textarea { margin-bottom: 10px; padding: 10px; font-size: 1em; }
+        button { background: #d4af37; color: black; border: none; padding: 10px; cursor: pointer; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .product { width: 100%; margin-bottom: 20px; }
+            nav a { display: block; margin: 10px 0; }
+            .logo-container { flex-direction: column; align-items: flex-start; }
+            .logo-container img { height: 60px; }
+            .logo-text { font-size: 1.2em; margin-top: 5px; }
+        }
+
     </style>
 </head>
 <body>
-    <h1>Rólunk</h1>
-    <p>Az MDS Parfüm Szalon célja, hogy egyedi, személyre szabott illatélményt nyújtson minden látogatónknak.
-       Hiszünk benne, hogy az illat az önkifejezés egyik legerőteljesebb módja.</p>
-    <p>Szalonunkban kizárólag prémium minőségű, gondosan válogatott niche parfümöket kínálunk.
-       Személyes illattanácsadásaink során segítünk megtalálni a hozzád illő egyedi kompozíciókat.</p>
-    <p><a href="index.html">Vissza a főoldalra</a></p>
+    
+    <header>
+        <div class="logo-container">
+            <img src="M_logo.png" alt="MDS logo" />
+            <div class="logo-text">MDS Parfüm Szalon</div>
+        </div>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="rolunk.html">Rólunk</a>
+        </nav>
+    </header>
+
+    <main>
+        <section style="padding: 40px; max-width: 800px; margin: 0 auto;">
+            <h1>Rólunk</h1>
+            <p>Az MDS Parfüm Szalon célja, hogy a legexkluzívabb, különleges niche illatokat hozza el vendégeinek, gondosan válogatott kínálattal és személyre szabott tanácsadással. Szakértőink, mint Judit Tóke, segítenek megtalálni az Ön egyedi illatát.</p>
+            <p>Hiszünk abban, hogy minden ember megérdemli a saját, utánozhatatlan parfümjét, ami nem csak illat, hanem önkifejezés.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 MDS Parfüm Szalon | parfum@mdsconcept.hu
+    </footer>
 </body>
 </html>
